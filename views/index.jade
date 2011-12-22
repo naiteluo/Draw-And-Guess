@@ -1,2 +1,53 @@
-h1= title
-p Welcome to #{title}
+div#col-left
+  fieldset#game 
+    legend#game-message Draw Pad 
+      span#counter 
+    canvas(width='560', height='480')#draw-pad
+      | Sorry, your web browser does not support Canvas. 
+  footer
+    p 
+      | #{title} with 
+      a(href='http://nodejs.org', target='_blank') nodejs 
+      | and
+      a(href='http://socket.io', target='_blank') socket.io
+div#col-right
+  fieldset#chat-logs
+    legend Chat Logs
+    ul#messages
+  fieldset#chat-box
+    legend#login-info.offline Offline
+    label(for='nickName')#infos
+      span.info
+    label(for='message') 
+      textarea(type='text', name='message', cols='31', rows='3', maxlength="140")#message
+    label
+      strong Online users:
+      ul#users-list
+fieldset#tools-bar
+  legend#tools-bar-title Tools
+  ul
+    li.tool
+      strong 粗细
+      ul#thickness
+        li.thickness_1 细
+        li.thickness_2 中
+        li.thickness_3 粗
+    li.tool
+      strong 颜色
+      ul#colors
+        li.red .
+        li.green .
+        li.blue .
+        li.yellow
+        li.black .
+        li.gray .
+        li.purple .
+    li.tool
+      strong 橡皮
+      ul#erase
+        li.thickness_1 细
+        li.thickness_2 中
+        li.thickness_3 粗
+    li.tool
+      strong#clear 清除
+        

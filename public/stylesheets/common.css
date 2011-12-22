@@ -1,0 +1,340 @@
+body {
+  padding: 0px;
+  margin: 0 auto;
+  width: 960px;
+  background: #FFFFFF url('../images/bg-gradient.png') repeat-x;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
+body:active {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px #888;
+  cursor: pointer;
+}
+
+header {
+  padding: 2px 20px;
+}
+
+header h1 {
+  margin: 2px;
+  font: 35px Helvetica, sans-serif;
+  font-weight: bold;
+  color: #999;
+  text-shadow: 0 2px 2px #666;
+}
+
+/*
+header h1 {
+  display: inline;
+  position: relative;
+  font: 50px Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(255,0,0,0.6);
+}
+
+header h1:after {
+  content: "Chat Here";
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  text-shadow: 1px 2px 3px rgba(0,255,0,0.2);
+  color: rgba(0,0,255,0.4);
+  
+}
+*/
+
+section#wrapper {
+  overflow: hidden;
+}
+
+div#col-left {
+  padding: 15px;
+  float: left;
+}
+
+div#col-right {
+  width: 330px;
+  float: right;
+}
+
+footer {
+  padding: 0px;
+  clear: both;
+}
+
+footer p {
+  margin: 0px;
+  padding: 5px 20px;
+  font: 16px Helvetica, sans-serif;
+  color: #999;
+  text-shadow: 0 1px 1px #666;
+}
+
+label {
+  display: block;
+}
+
+label strong {
+  display: inline-block;
+  font-size: 12px;
+  width: 100px;
+  text-align: right;
+}
+
+fieldset { 
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: solid 1px #999999;
+  box-shadow: -1px 1px 1px rgba(100, 100, 200, 0.4);
+}
+
+fieldset legend {
+  font-size: 20px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+label#infos {
+  display: none;
+}
+
+label#infos span.info {
+  display: block;
+  padding: 4px;
+}
+
+legend.offline {
+  color: #981214;
+}
+
+legend.online {
+  color: #149912;
+}
+
+fieldset#chat-logs {
+
+}
+
+fieldset#chat-logs ul#messages {
+  width: 290px;
+  font-size: 12px;
+  height: 300px;
+  padding: 5px;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+fieldset#chat-logs ul#messages li {
+  display: block;
+  overflow: hidden;
+  margin: 2px 2px 5px 0px;
+  padding: 5px 5px 2px 5px;
+  border-radius: 5px;
+  box-shadow: 3px 4px 3px #666;
+}
+
+/*
+fieldset#chat-logs ul#messages li strong {
+  font-size: 14px;
+  display: block;
+  width: 30%;
+}
+
+fieldset#chat-logs ul#messages li span {
+  display: block;
+  width: 64%; 
+  padding: 1% 1%;
+  margin: 0 1%;
+}
+
+fieldset#chat-logs ul#messages li.me strong,
+fieldset#chat-logs ul#messages li.announcement strong {
+  float: left;
+  text-align: right;
+}
+fieldset#chat-logs ul#messages li.me span,
+fieldset#chat-logs ul#messages li.announcement span {
+  float: right;
+  border-left: 1px solid rgba(180, 180, 180, 0.6);
+}
+
+fieldset#chat-logs ul#messages li.others strong {
+  float: right;
+  text-align: left;
+}
+fieldset#chat-logs ul#messages li.others span {
+  float: left;
+  text-align: right;
+  border-right: 1px solid rgba(180, 180, 180, 0.6);
+}
+*/
+
+fieldset#chat-logs ul#messages li strong {
+  font-size: 12px;
+  display: block;
+  width: 100%;
+}
+
+fieldset#chat-logs ul#messages li span {
+  display: block;
+  overflow: hidden;
+  width: 90%; 
+  font-size: 12px;
+}
+
+span.word {
+  display: inline;
+  color: #981214;
+  text-shadow: 0px 1px 1px #fe3333;
+}
+
+fieldset#chat-logs ul#messages li.me strong,
+fieldset#chat-logs ul#messages li.announcement strong {
+  text-align: left;
+}
+fieldset#chat-logs ul#messages li.me span,
+fieldset#chat-logs ul#messages li.announcement span {
+  padding: 1% 0 2% 5%;
+  margin: 1% 0 2% 5%;
+  border-left: 1px solid rgba(180, 180, 180, 0.6);
+}
+
+fieldset#chat-logs ul#messages li.others strong {
+  text-align: right;
+}
+fieldset#chat-logs ul#messages li.others span {
+  text-align: right;
+  padding: 1% 5% 2% 0;
+  margin: 1% 5% 2% 0;
+  border-right: 1px solid rgba(180, 180, 180, 0.6);
+}
+
+fieldset#chat-logs ul#messages li.me {
+  border-top: 1px solid #1199AA;
+  border-right: 1px solid #1199AA;
+  border-left: 2px solid #1199AA;
+  border-bottom: 3px solid #1199AA;
+  box-shadow: -1px 2px 2px #def;
+}
+
+fieldset#chat-logs ul#messages li.others {
+  border-top: 3px solid #DD4422;
+  border-right: 2px solid #DD4422;
+  border-left: 1px solid #DD4422;
+  border-bottom: 1px solid #DD4422;
+  box-shadow: 1px -2px 2px #fde;
+}
+
+fieldset#chat-logs ul#messages li.announcement {
+  border-top: 1px solid #3CA051;
+  border-right: 2px solid #3CA051;
+  border-left: 3px solid #3CA051;
+  border-bottom: 1px solid #3CA051;
+  box-shadow: -2px 0px 2px #dfe;
+}
+
+fieldset#chat-box {
+  height: 200px;
+}
+
+fieldset#chat-box textarea {
+  overflow: hidden;
+  padding: 10px;
+  resize: none;
+}
+
+fieldset#chat-box ul#users-list {
+  padding: 2px;
+  margin: 0px;
+}
+
+fieldset#chat-box ul#users-list li {
+  display: inline-block;
+  font-size: 10px;
+  padding: 4px;
+  margin: 4px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background: #DDAACC;
+}
+
+/* games */
+canvas {
+  position: relative;
+  background: rgba(180, 180, 180, 0.3);
+  cursor: pointer;
+}
+
+canvas:active {
+  cursor: pointer;
+}
+
+/* tools bar */
+fieldset#tools-bar {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 40px;
+  padding: 10px;
+  border: 1px solid #666666;
+}
+
+fieldset#tools-bar ul {
+  padding: 5px;
+}
+
+fieldset#tools-bar ul li.tool {
+  margin: 5px 2px;
+}
+
+fieldset#tools-bar ul li.tool ul{
+  margin-left: 10px;
+  padding-left: 10px;
+  display: none;
+  border-left: 2px solid rgba(180, 180, 180, 0.3);
+  border-radius: 2px;
+}
+
+fieldset#tools-bar ul li.tool ul li {
+  margin: 2px;
+}
+
+li.red {
+  background: red;
+}
+li.green {
+  background: green;
+}
+li.blue {
+  background: blue;
+}
+li.yellow {
+  background: yellow;
+}
+li.black {
+  background: black;
+}
+li.gray {
+  background: gray;
+}
+li.purple {
+  background: purple;
+}
