@@ -1,4 +1,5 @@
-/*
- * this is a game
- * @author naiteluo
- */
+＃This is a game#
+
+#install#
+
+  npm install
