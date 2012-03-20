@@ -57,6 +57,10 @@ $(function() {
   initToolsBar();
   initCLI();
 
+  // welcome message
+  setLog('announcement', 'system', "欢迎使用，输入\"#login YOURNAME\"登陆，当人数多于两人即可输入\"＃start\"");
+
+
   // chat msg listener
   chatMsgListener();
   // game msg listener
